@@ -31,8 +31,12 @@ function Page() {
   <div className='grid gap-4 m-9 sm:grid-cols-2 grid-cols-1'>
     <div>
       <h1 className='text-4xl text-gray-400'>Hisab Kitab</h1>
-      <h2 className='text-gray-400 mt-9'>Hisab Kitab helps you keep track of money you've lent and borrowed, including interest. You can also log extra transactions with notes. It automatically calculates your net balance and keeps all your financial records organized and easy to access.</h2>
-    </div>
+      <h2 className='text-gray-400 mt-9'>
+            Hisab Kitab helps you keep track of money you&apos;ve lent and borrowed, including interest. 
+            You can also log extra transactions with notes. It automatically calculates your net balance 
+            and keeps all your financial records organized and easy to access.
+          </h2>
+     </div>
     <form action={signuphandler} className='grid gap-4 m-9'>
     <h2>signup and start your journey</h2>  
     <Input type='text' placeholder='Username' name='Username'  onChange={(e)=>setUser({...user,username:e.target.value})}/>
